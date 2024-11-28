@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.source_files          = 'Sources/**/*'
   s.frameworks            = 'SwiftUI', 'Foundation'
   
-  s.homepage              = 'https://github.com/Mijick/NavigationView.git'
+  s.homepage              = 'https://github.com/D3JAVU-BaseAppleDev/NavigationView.git'
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
   s.author                = { 'Tomasz Kurylik' => 'tomasz.kurylik@mijick.com' }
-  s.source                = { :git => 'https://github.com/Mijick/NavigationView.git', :tag => s.version.to_s }
+  s.source                = { :git => 'https://github.com/D3JAVU-BaseAppleDev/NavigationView.git', :tag => s.version.to_s }
 end
