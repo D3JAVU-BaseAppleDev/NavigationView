@@ -14,7 +14,7 @@ import SwiftUI
 public extension NavigatableView {
     func implementNavigationView(config: NavigationGlobalConfig = .init()) -> some View { GeometryReader { reader in
         NavigationView(config: config)
-            .onAppear { ScreenManager.update(reader); NavigationManager.setRoot(self) }
+            .onAppearOnce { ScreenManager.update(reader); NavigationManager.setRoot(self) }
             .onChange(of: reader.size) { _ in ScreenManager.update(reader) }
             .onChange(of: reader.safeAreaInsets) { _ in ScreenManager.update(reader) }
     }}
